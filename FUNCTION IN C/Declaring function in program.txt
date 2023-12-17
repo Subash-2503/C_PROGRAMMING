@@ -1,0 +1,16 @@
+#include <stdio.h>
+int add();
+int main()
+{
+    int c=add();
+    printf("%d",c);
+}
+int add()
+{
+    int a=10,b=20;
+    int c=a+b;
+    return c;
+}
+output
+
+30

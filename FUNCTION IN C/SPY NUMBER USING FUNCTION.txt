@@ -1,0 +1,42 @@
+#include <stdio.h>
+void spy()
+{
+    int n,s=0,p=1,d;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        s=s+d;
+        p=p*d;
+        n=n/10;
+    }
+   if(s==p)
+        printf("yes");
+    else
+        printf("no");
+}
+
+int main()
+{
+    spy();
+    return 0;
+}
+output 
+22
+yes
+******************small program************
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int sum=0,mul=1;
+    while(n>0)
+    {
+        int r=n%10;
+        sum=sum+r;
+        mul=mul+r;
+        n=n/10;
+    }
+        printf((sum==mul)?"spy num":"spy num");
+}

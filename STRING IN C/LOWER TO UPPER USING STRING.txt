@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int i,n;
+    char c[100];
+    scanf("%[^\n]",c);
+    for(i=0;c[i]!='\0';i++)
+    {
+        n=(int)c[i];
+        n=n^32;
+    printf("%c",n);
+     }
+}
+output
+subash
+SUBASH

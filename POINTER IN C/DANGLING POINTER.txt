@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+  
+    int *p=(int *)malloc(sizeof(int));
+    p[0]=20;
+    printf("%d",*p);
+     free(p);
+      printf(" %d",*p);//print after free the memory, called dangling poiter
+
+    return 0;
+}
+
+

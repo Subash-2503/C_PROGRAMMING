@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+   {
+    int a=209,b=391,c;
+    c=a^(b^a);
+    printf("%d",c);
+    return 0;
+}
+
+

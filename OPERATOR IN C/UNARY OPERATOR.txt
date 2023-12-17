@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+   {
+    int i=0,j=1,k=0,c;
+    c=i++||++j||k++;
+    printf("%d %d %d %d",i,j,k,c);
+    return 0;
+}
+
+

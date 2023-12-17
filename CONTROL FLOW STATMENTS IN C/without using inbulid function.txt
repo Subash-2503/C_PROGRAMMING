@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int b=2,p=3,i=1,res=1;
+    scanf("%d %d",&b,&p);
+    while (i<=p)
+    {
+     res=res*b;   
+     i++;
+    }
+    printf("%d",res);
+
+    return 0;
+}
+

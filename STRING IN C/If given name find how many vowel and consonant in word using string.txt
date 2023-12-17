@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    char str[50],a[60],c[60];
+    scanf("%s",str);
+    int l=0,b=0,d=0;
+    while(str[l]!='\0')
+    {
+        l++;
+    }
+        for(int i=0;i<l;i++)
+    {
+    if(str[i]=='a' || str[i]=='e' || str[i]=='i'|| str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I'|| str[i]=='O' || str[i]=='U')
+    {
+    b++;
+}
+  else
+d++;
+}
+printf("vol=%d \ncon=%d",b,d);
+}
+output
+
+input = dinesh
+output  
+vol=2
+con=4

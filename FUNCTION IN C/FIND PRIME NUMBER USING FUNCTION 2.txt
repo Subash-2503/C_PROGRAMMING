@@ -1,0 +1,29 @@
+#include <stdio.h>
+int prime();
+int main(){
+    int c = prime();
+    printf("%d",c);
+}
+int prime(){
+    int a,f=0;
+    scanf("%d",&a);
+    if (a == 0 || a == 1)
+     f = 1;
+   for (int i = 2; i <= a / 2; ++i) {
+   if (a % i == 0) {
+      f = 1;
+      break;
+    }
+  }
+  if (f == 0)
+{
+    printf("prime number");
+}
+else
+{
+    printf("not a prime number");
+}
+}
+output
+5 
+prime number

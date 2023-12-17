@@ -1,0 +1,32 @@
+#include <stdio.h>
+int sum(int c)
+{
+int sum=0;
+while(c>0)
+  { 
+    int rem=c%10;
+    sum=sum+rem;
+    c=c/10;
+   }
+    return sum;
+  }
+int sqr()
+  {
+    int n;
+    scanf("%d",&n);
+    int c=n*n;
+  }
+int main()
+ {
+    int n;
+    scanf("%d",&n);
+    int c=sqr();
+    int k=sum(c);
+    printf((k==n)?"yes":"no");
+    return 0;
+    
+ }
+output
+9
+9
+yes

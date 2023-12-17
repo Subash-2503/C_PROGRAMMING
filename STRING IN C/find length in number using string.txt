@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    char c[100];
+    scanf("%[^\n]",c);
+    for(i=0;c[i]!='\0';i++);
+    {
+    printf("%d",i);
+     }
+}
+output
+subash
+6

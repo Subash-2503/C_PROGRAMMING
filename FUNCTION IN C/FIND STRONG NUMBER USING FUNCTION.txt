@@ -1,0 +1,29 @@
+#include <stdio.h>
+int strongnumber();
+int main() 
+{
+    strongnumber();
+}
+int strongnumber()
+{
+    int n;
+    int count=0;
+    scanf("%d",&n);
+    int fact=1;
+    int a=n;
+        while(n>0)
+    {
+    int r=n%10;
+    for(int i=1;i<=r;i++)
+    {
+      fact*=i;
+    }
+    count+=fact;
+    fact=1;
+    n/=10;
+    }
+    printf((a==count)?"Yes":"No");
+}
+output
+145
+yes

@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    char str[50];
+    scanf("%s",str);
+ int k=str[0]-'0';
+ int k1=str[2]-'0';
+ switch(str[1])
+ {
+  case '+':
+  printf("%d",k+k1);
+  break;
+  case '-':
+  printf("%d",k-k1);
+  break;
+ case '/':
+  printf("%d",k/k1);
+  break;
+  case '%':
+  printf("%d",k%k1);
+  break;
+  default:
+  printf("not valid");
+ }
+}  
+
+output
+input = 3+2
+output = 5

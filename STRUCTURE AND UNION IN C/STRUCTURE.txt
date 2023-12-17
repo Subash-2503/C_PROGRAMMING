@@ -1,0 +1,23 @@
+#include <stdio.h>
+#pragma pack(1)
+int main()
+{ int n;
+scanf("%d",&n);
+    struct s{
+        int r;
+        char s[50];
+        float m;
+    }s1[n];
+
+    for(int i=0;i<n;i++){
+        scanf("%d %s %f",&s1[i].r,s1[i].s,&s1[i].m);
+    }
+   for(int i=0;i<n;i++){
+        printf("%d %s %f",s1[i].r,s1[i].s,s1[i].m);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+

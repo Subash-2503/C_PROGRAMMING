@@ -1,0 +1,38 @@
+#include<stdio.h>
+struct student
+{
+    int rollno;
+    char name[20];
+    float avg;
+    int sub1,sub2,sub3,sub4,sub5,sum;
+    
+} a;
+
+typedef struct student hi;
+int main()
+{
+    hi a;
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FILL YOUR PERSONAL DETAILS<<<<<<<<<<<<<<<<<<<<\n");
+      printf("ENTER THE REGISTER NUMBER :");
+    scanf("%d",&a.rollno);
+     printf("ENTER THE NAME :");
+    scanf("%s",a.name);
+    printf(">>TAMIL :");
+    scanf("%d",&a.sub1);
+    printf(">>ENGLISH :");
+    scanf("%d",&a.sub2);
+    printf(">>MATHE :");
+    scanf("%d",&a.sub3);
+    printf(">>CHEMISTRY:");
+    scanf("%d",&a.sub4);
+    printf(">>PHYICS :");
+    scanf("%d",&a.sub5);
+    
+    a.sum = a.sub1+a.sub2+a.sub3+a.sub4+a.sub5;
+     a.avg=a.sum/5;
+    printf("SUM OF SUBJECT :");
+    printf("%d\n",a.sum);
+    printf("AVG:");
+    printf("%f",a.avg);
+   
+}

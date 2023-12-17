@@ -1,0 +1,30 @@
+#include <stdio.h>
+int f[257];
+int main()
+{
+    char str[50];
+    scanf("%s",str);
+    int l=0;
+    while(str[l]!='\0')
+    {
+        l++;
+    }
+    
+        for(int i=0;i<l;i++)
+        {
+        f[str[i]]++;
+         }
+ for(int i=0;i<257;i++)
+{
+    if(f[i]>0 && f[i]==1)
+    {
+        printf("%c",i);
+    }
+}
+}
+
+output
+
+hello
+
+eho

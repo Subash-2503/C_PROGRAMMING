@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    if(a!=0)
+    {
+    if(a<=10)
+    {
+        if(a>=9)
+        {
+            printf("Hi");
+        }
+    }
+}
+else{
+    printf("Hello");
+}
+    return 0;
+}
+

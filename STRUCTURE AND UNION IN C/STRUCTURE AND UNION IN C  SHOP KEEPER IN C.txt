@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct storestaff
+{
+    int rackno;
+    char author[20];
+    float price;
+};
+union ra
+{
+    int rackno;
+    char author[20];
+    float price;
+};
+typedef struct storestaff ss;
+typedef union ra s;
+int main()
+{
+    ss a;
+    scanf("%d",&a.rackno);
+    scanf("%s",a.author);
+    scanf("%f",&a.price);
+    printf("%d",a.rackno);
+    printf("%s",a.author);
+    printf("%f",a.price);
+    
+     s b;
+    scanf("%d",&b.rackno);
+    scanf("%s",b.author);
+    scanf("%f",&b.price);
+    printf("%d",b.rackno);
+    printf("%s",b.author);
+    printf("%f",b.price);
+}

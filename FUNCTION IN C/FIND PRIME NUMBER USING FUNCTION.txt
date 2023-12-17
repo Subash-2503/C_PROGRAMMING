@@ -1,0 +1,28 @@
+#include <stdio.h>
+int prime();
+int main()
+{
+    int c=prime();
+    printf((c==2)?"prime number":"not prime");
+}
+int prime()
+{
+    int n;
+    scanf("%d",&n);
+    int c=0;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            c++;
+        }
+    }
+    return c;
+}
+
+output
+23
+prime number
+
+24
+not a prime number

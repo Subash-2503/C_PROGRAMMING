@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int s;
+    scanf("%d",&s);
+    {
+   if (s > 0 && s < 73) 
+        if (s % 8 == 1 || s % 8 == 4) 
+             printf( "lower");  
+              
+        else if (s % 8 == 2 || s % 8 == 5) 
+            printf( "middle");  
+              
+        else if(s % 8 == 3 || s % 8 == 6) 
+            printf( "upper"); 
+              
+        else if(s % 8 == 7) 
+             printf( "side lower");  
+              
+        else
+            printf( "side middle"); 
+              
+    else
+             printf( "side upper"); 
+} 
+  
+}

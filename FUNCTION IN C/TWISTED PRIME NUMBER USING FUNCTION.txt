@@ -1,0 +1,42 @@
+#include <stdio.h>
+int tp(int n)
+{
+int c=0;
+for(int i=1;i<=n;i++)
+{
+    if(n%i==0)
+    {
+        c++;
+    }
+}
+int sum=0;
+if(c==2)
+{
+    while(n>0)
+    {
+        int rem=n%10;
+        sum=sum*10+rem;
+        n/=10;
+    }
+    
+}
+int k=0;
+   for(int i=1;i<=sum;i++)
+{
+    if(sum%i==0)
+    {
+        k++;
+    }
+}
+return k;}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int k=tp(n);
+    printf((k==2)?"yes":"no");
+    return 0;
+ }
+
+output
+97
+yes

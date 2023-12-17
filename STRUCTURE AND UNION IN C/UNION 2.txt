@@ -1,0 +1,15 @@
+#include <stdio.h>
+union s{
+    float salary;
+    int workerno;
+}j;
+    int main()
+{
+    j.salary=12.3;
+    printf("salary:%f",j.salary);
+    j.workerno=100;
+       printf("\nWorkerno:%d",j.workerno); 
+    return 0;
+}
+
+

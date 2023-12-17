@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+   int r;
+  scanf("%d",&r);
+  if((r==a'')||(r=='e')||(r=='i')||(r=='o')||(r=='u'))
+ {
+     printf("VOWEL");
+  }
+else
+{
+printf("consonant")
+}
+}
+output
+input = e
+output=VOWEL
